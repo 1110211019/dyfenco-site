@@ -1,0 +1,1 @@
+console.log("DYFENCO GitHub Pages 網站已啟動！");
