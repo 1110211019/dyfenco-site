@@ -1,0 +1,388 @@
+@media (max-width: 991px) {
+    .navbar .container {
+        padding: 0 20px;
+    }
+
+    .navbar-top-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .navbar-utilities {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: calc(100% - 40px);
+        gap: 8px;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        width: 30px;
+        gap: 5px;
+        align-self: flex-start;
+        margin-left: auto;
+    }
+
+    .hamburger div {
+        height: 3px;
+        background-color: #1a237e;
+        border-radius: 2px;
+    }
+
+    .navbar-nav-row {
+        width: 100%;
+    }
+
+    .navbar nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: #fff;
+        padding: 10px 0;
+        border-top: 1px solid #ccc;
+        gap: 15px;
+    }
+
+    .navbar nav.active {
+        display: flex;
+    }
+
+    .search-box,
+    .language-switcher {
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p,
+    .about-description {
+        font-size: 16px !important;
+    }
+
+    .about-title {
+        font-size: 28px;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        width: 200px;
+    }
+}
+
+
+
+
+/* ===== 基本設定 ===== */
+body {
+    margin: 0;
+    font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* ===== 導覽列與 LOGO 分離樣式 ===== */
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 15px 0;
+}
+
+.navbar-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.logo {
+    flex: 1;
+
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+.navbar-utilities {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 18px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-box:focus {
+    border-color: #1a237e;
+}
+
+.language-switcher {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: white;
+    color: #1a237e;
+    outline: none;
+    cursor: pointer;
+}
+
+.navbar-nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.navbar nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.navbar nav a:hover {
+    background-color: #e8eaf6;
+    color: #0d47a1;
+}
+
+/* ===== About 區塊（文字置中、背景圖）===== */
+.about-section {
+    background: url("../IMG/CompanyProfile_1.jpg") center center / cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    position: relative;
+    min-height: 400px;
+}
+
+.about-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* 半透明遮罩讓文字更清楚 */
+    z-index: 0;
+}
+
+.about-section .container {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    text-align: center;
+    color: #fff;
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 40px auto;
+    border-radius: 8px;
+}
+
+
+/* ===== 頁腳區塊 ===== */
+.footer {
+    background-color: #fff;
+    color: #000;
+    padding-top: 60px;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 20px 40px;
+    border-bottom: 1px solid #444;
+}
+
+.footer-logo {
+    width: 500px;
+    height: auto;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.footer-column a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.footer-column a:hover {
+    background-color: #e8eaf6;
+    color: #0d47a1;
+    border-color: #c5cae9;
+}
+
+
+.footer-bottom {
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+}
+
+
+/* ===== 動畫效果：淡入滑入 ===== */
+.animate-fade {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.animate-fade.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+}
+
+.scroll-gallery img {
+    flex: 0 0 auto;
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    scroll-snap-align: center;
+    transition: transform 0.3s ease;
+}
+
+.scroll-gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    color: #1a237e;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
